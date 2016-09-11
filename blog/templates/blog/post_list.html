@@ -1,18 +1,32 @@
+{% load staticfiles %}
 <html>
     <head>
         <title>A Simple Blog</title>
-    </head>
+		<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet"> 
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	</head>
     <body>
-        <div>
+        <div class="page-header">
             <h1><a href="">A Simple Blog</a></h1>
         </div>
 
-		{% for post in posts %}
-			<div>
-				<h2><a href="">{{ post.title }}</a></h2>
-				<p>{{ post.text|linebreaksbr }}</p>
-				<p>published: {{ post.published_date }}</p>
+		<div class="content container">
+    		<div class="row">
+     		   <div class="col-md-8">
+           		 {% for post in posts %}
+           		     <div class="post">
+                  	     <h2><a href="">{{ post.title }}</a></h2>
+                   		 <p>{{ post.text|linebreaksbr }}</p>
+						 <div class="date">
+                   		     <p>published: {{ post.published_date }}</p>
+                  	     </div>
+             	     </div>
+           		 {% endfor %}
+				</div>
 			</div>
-		{% endfor %}
+		</div>
+
 	</body>
 </html>
