@@ -9,6 +9,6 @@
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
-		<a class="btn btn-default text-center" href="{% url 'post_edit' pk=post.pk  %}"><span class="glyphicon glyphicon-pencil"></span><br>Edit</a>
+		<a class="btn btn-default text-center" href="{% url 'post_edit' pk=post.pk  %}"><span class="glyphicon glyphicon-pencil"></span><br>Edit post</a>
      </div>
 {% endblock %}
