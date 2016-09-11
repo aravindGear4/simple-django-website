@@ -1,4 +1,4 @@
-Built using Django framework, has basic functionality like logging in, adding and editing posts.
+Built using Django and Bootstrap frameworks, has basic functionality like logging in, adding and editing posts.
 
 http://batur1n.pythonanywhere.com/
 
