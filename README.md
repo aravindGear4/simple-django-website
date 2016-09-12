@@ -1,11 +1,5 @@
-Built using Django and Bootstrap frameworks, has basic functionality like logging in, adding and editing posts.
+Built from scratch using Django and Bootstrap frameworks, has basic functionality like logging in, adding and editing posts, commenting. Deployed at two free-host platforms:
 
-http://batur1n.pythonanywhere.com/
+http://batur1n.pythonanywhere.com/ and https://randomfactsblog.herokuapp.com/
 
-login: admin, password: p@ssword12345
-
-todo:
- - continue to work on tutorial;
- - header alignment and overall design improvement;
- - improve posting quality (lol);
- - add comments and likes (?);
+login: admin, password: p@ssword12345 (needed to add posts)
